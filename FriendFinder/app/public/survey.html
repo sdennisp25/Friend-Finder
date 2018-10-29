@@ -20,168 +20,168 @@
 
 	<div class="container">
 
-		<div class="row">
-			<div class="col-md-12">
-				<div class="card">
+		<form id="surveyForm">
 
-					<div class="card-body">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="card">
+						<div class="card-body">
+							<div class="form-group">
+								<label for="name">Your Name</label>
+								<input type="input" class="form-control" placeholder="Enter your name">
+							</div>
+							<div class="form-group">
+								<label for="imageLink">Link address to your image</label>
+								<input type="email" class="form-control" placeholder="Submit a link, to an image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
+			<!-- ===================================================== -->
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="card">
 						<div class="form-group">
-							<label for="name">Your Name</label>
-							<input type="input" class="form-control" placeholder="Enter your name">
+							<h4 class="card-header">Question 1</h4>
+							<div class="card-body">
+								<label>Do you like to dance?</label>
+								<select id="multipleChoice" class="form-control">
+									<option id="q1a" name="type" value="1">Yes</option>
+									<option id="q1b" name="type" value="2">No</option>
+								</select>
+							</div>
 						</div>
+					</div>
 
+					<div class="card">
 						<div class="form-group">
-							<label for="imageLink">Link address to your image</label>
-							<input type="email" class="form-control" placeholder="Submit a link, to an image">
+							<h4 class="card-header">Question 2</h4>
+							<div class="card-body">
+								<label>Do you remember your dreams?</label>
+								<select id="multipleChoice" class="form-control">
+									<option id="q2a" name="type" value="1">Yes</option>
+									<option id="q2b" name="type" value="2">No</option>
+								</select>
+							</div>
 						</div>
 					</div>
 
-				</div>
-			</div>
-		</div>
-
-
-		<div class="row">
-			<div class="col-md-6">
-				<div class="card">
-					<div class="form-group">
-						<h4 class="card-header">Question 1</h4>
-						<div class="card-body">
-							<label>Do you like to dance?</label>
-							<select id="multipleChoice" class="form-control">
-								<option id="q1a" value="1">Yes</option>
-								<option id="q1b" value="2">No</option>
-							</select>
+					<div class="card">
+						<div class="form-group">
+							<h4 class="card-header">Question 3</h4>
+							<div class="card-body">
+								<label>What is your favorite color?</label>
+								<select id="multipleChoice" class="form-control">
+									<option id="q3a" name="type" value="1">Red</option>
+									<option id="q3b" name="type" value="2">Blue</option>
+								</select>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="card">
-					<div class="form-group">
-						<h4 class="card-header">Question 2</h4>
-						<div class="card-body">
-							<label>Do you remember your dreams?</label>
-							<select id="multipleChoice" class="form-control">
-								<option id="q2a" value="1">Yes</option>
-								<option id="q2b" value="2">No</option>
-							</select>
+					<div class="card">
+						<div class="form-group">
+							<h4 class="card-header">Question 4</h4>
+							<div class="card-body">
+								<label>What is your favorite food out of the list?</label>
+								<select id="multipleChoice" class="form-control">
+									<option id="q4a" name="type" value="1">Beef</option>
+									<option id="q4b" name="type" value="2">Beef</option>
+								</select>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="card">
-					<div class="form-group">
-						<h4 class="card-header">Question 3</h4>
-						<div class="card-body">
-							<label>What is your favorite color?</label>
-							<select id="multipleChoice" class="form-control">
-								<option id="q3a" value="1">Red</option>
-								<option id="q3b" value="2">Blue</option>
-							</select>
-						</div>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="form-group">
-						<h4 class="card-header">Question 4</h4>
-						<div class="card-body">
-							<label>What is your favorite food out of the list?</label>
-							<select id="multipleChoice" class="form-control">
-								<option id="q4a" value="1">Beef</option>
-								<option id="q4b" value="2">Beef</option>
-							</select>
+					<div class="card">
+						<div class="form-group">
+							<h4 class="card-header">Question 5</h4>
+							<div class="card-body">
+								<label>What is your dream vacation?</label>
+								<select id="multipleChoice" class="form-control">
+									<option id="q5a" name="type" value="1">Las Vegas</option>
+									<option id="q5b" name="type" value="2">Hawaii</option>
+								</select>
+							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="card">
-					<div class="form-group">
-						<h4 class="card-header">Question 5</h4>
-						<div class="card-body">
-							<label>What is your dream vacation?</label>
-							<select id="multipleChoice" class="form-control">
-								<option id="q5a" value="1">Las Vegas</option>
-								<option id="q5b" value="2">Hawaii</option>
-							</select>
+				<!-- ===================================================== -->
+				<div class="col-md-6">
+
+					<div class="card">
+						<div class="form-group">
+							<h4 class="card-header">Question 6</h4>
+							<div class="card-body">
+								<label>Pepsi or Coke?</label>
+								<select id="multipleChoice" class="form-control">
+									<option id="q6a" name="type" value="1">Pepsi</option>
+									<option id="q6b" name="type" value="2">Coke</option>
+								</select>
+							</div>
 						</div>
 					</div>
-				</div>
 
-			</div>
-
-			<div class="col-md-6">
-
-				<div class="card">
-					<div class="form-group">
-						<h4 class="card-header">Question 6</h4>
-						<div class="card-body">
-							<label>Pepsi or Coke?</label>
-							<select id="multipleChoice" class="form-control">
-								<option id="q6a" value="1">Pepsi</option>
-								<option id="q6b" value="2">Coke</option>
-							</select>
+					<div class="card">
+						<div class="form-group">
+							<h4 class="card-header">Question 7</h4>
+							<div class="card-body">
+								<label>What's your favorite food from the list?</label>
+								<select id="multipleChoice" class="form-control">
+									<option id="q7a" name="type" value="1">Lasagna</option>
+									<option id="q7b" name="type" value="2">Pizza</option>
+								</select>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="card">
-					<div class="form-group">
-						<h4 class="card-header">Question 7</h4>
-						<div class="card-body">
-							<label>What's your favorite food from the list?</label>
-							<select id="multipleChoice" class="form-control">
-								<option id="q7a" value="1">Lasagna</option>
-								<option id="q7b" value="2">Pizza</option>
-							</select>
+					<div class="card">
+						<div class="form-group">
+							<h4 class="card-header">Question 8</h4>
+							<div class="card-body">
+								<label>Favorite type of music from the list?</label>
+								<select id="multipleChoice" class="form-control">
+									<option id="q8a" name="type" value="1">Hip Hop</option>
+									<option id="q8b" name="type" value="2">Country</option>
+								</select>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="card">
-					<div class="form-group">
-						<h4 class="card-header">Question 8</h4>
-						<div class="card-body">
-							<label>Favorite type of music from the list?</label>
-							<select id="multipleChoice" class="form-control">
-								<option id="q8a" value="1">Hip Hop</option>
-								<option id="q8b" value="2">Country</option>
-							</select>
+					<div class="card">
+						<div class="form-group">
+							<h4 class="card-header">Question 9</h4>
+							<div class="card-body">
+								<label>Your favorite animal?</label>
+								<select id="multipleChoice" class="form-control">
+									<option id="q9a" name="type" value="1">Cats</option>
+									<option id="q9b" name="type" value="2">Dogs</option>
+								</select>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="card">
-					<div class="form-group">
-						<h4 class="card-header">Question 9</h4>
-						<div class="card-body">
-							<label>Your favorite animal?</label>
-							<select id="multipleChoice" class="form-control">
-								<option id="q9a" value="1">Cats</option>
-								<option id="q9b" value="2">Dogs</option>
-							</select>
-						</div>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="form-group">
-						<h4 class="card-header">Question 10</h4>
-						<div class="card-body">
-							<label>Choose your superpower</label>
-							<select id="multipleChoice" class="form-control">
-								<option id="q10a" value="1">Super Strength</option>
-								<option id="q10b" value="2">Lightning Speed</option>
-							</select>
+					<div class="card">
+						<div class="form-group">
+							<h4 class="card-header">Question 10</h4>
+							<div class="card-body">
+								<label>Choose your superpower</label>
+								<select id="multipleChoice" class="form-control">
+									<option id="q10a" name="type" value="1">Super Strength</option>
+									<option id="q10b" name="type" value="2">Lightning Speed</option>
+								</select>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<button id="submit" type="button" class="btn btn-primary btn-lg btn-block">Submit Survey</button>
+			<button id="submit" type="button" class="btn btn-primary btn-lg btn-block">Submit Survey</button>
 	</div>
+	</form>
 
 </body>
 
@@ -204,5 +204,25 @@
 		text-align: center;
 	}
 </style>
+
+<script>
+
+	$("#submit").on("click", function (event) {
+		event.preventDefault();
+
+		var optionValue = document.getElementById("type");
+
+		for (var i = 0; i < optionValue.length; i++) {
+			if (optionValue[i].checked);
+			console.log(optionValue.value);
+		}
+
+
+
+	});
+
+
+
+</script>
 
 </html>
