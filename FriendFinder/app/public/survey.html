@@ -12,16 +12,33 @@
 
 <body>
 
-	<div class="container">
-		<label>Survey Questions</label>
-		<div class="form-group">
-			<label for="name">Your Name</label>
-			<input type="input" class="form-control" placeholder="Enter your name">
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<h1 class="display-4">Survey Question!</h1>
 		</div>
+	</div>
 
-		<div class="form-group">
-			<label for="imageLink">Link address to your image</label>
-			<input type="email" class="form-control" placeholder="Enter the link to an image of you or something">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+
+					<div class="card-body">
+
+						<div class="form-group">
+							<label for="name">Your Name</label>
+							<input type="input" class="form-control" placeholder="Enter your name">
+						</div>
+
+						<div class="form-group">
+							<label for="imageLink">Link address to your image</label>
+							<input type="email" class="form-control" placeholder="Submit a link, to an image">
+						</div>
+					</div>
+
+				</div>
+			</div>
 		</div>
 
 
@@ -33,7 +50,8 @@
 						<div class="card-body">
 							<label>Do you like to dance?</label>
 							<select id="multipleChoice" class="form-control">
-								<option>Disabled select</option>
+								<option id="q1a" value="1">Yes</option>
+								<option id="q1b" value="2">No</option>
 							</select>
 						</div>
 					</div>
@@ -45,7 +63,8 @@
 						<div class="card-body">
 							<label>Do you remember your dreams?</label>
 							<select id="multipleChoice" class="form-control">
-								<option>Disabled select</option>
+								<option id="q2a" value="1">Yes</option>
+								<option id="q2b" value="2">No</option>
 							</select>
 						</div>
 					</div>
@@ -57,7 +76,8 @@
 						<div class="card-body">
 							<label>What is your favorite color?</label>
 							<select id="multipleChoice" class="form-control">
-								<option>Disabled select</option>
+								<option id="q3a" value="1">Red</option>
+								<option id="q3b" value="2">Blue</option>
 							</select>
 						</div>
 					</div>
@@ -69,7 +89,8 @@
 						<div class="card-body">
 							<label>What is your favorite food out of the list?</label>
 							<select id="multipleChoice" class="form-control">
-								<option>Disabled select</option>
+								<option id="q4a" value="1">Beef</option>
+								<option id="q4b" value="2">Beef</option>
 							</select>
 						</div>
 					</div>
@@ -81,7 +102,8 @@
 						<div class="card-body">
 							<label>What is your dream vacation?</label>
 							<select id="multipleChoice" class="form-control">
-								<option>Disabled select</option>
+								<option id="q5a" value="1">Las Vegas</option>
+								<option id="q5b" value="2">Hawaii</option>
 							</select>
 						</div>
 					</div>
@@ -91,14 +113,14 @@
 
 			<div class="col-md-6">
 
-
 				<div class="card">
 					<div class="form-group">
 						<h4 class="card-header">Question 6</h4>
 						<div class="card-body">
 							<label>Pepsi or Coke?</label>
 							<select id="multipleChoice" class="form-control">
-								<option>Disabled select</option>
+								<option id="q6a" value="1">Pepsi</option>
+								<option id="q6b" value="2">Coke</option>
 							</select>
 						</div>
 					</div>
@@ -110,7 +132,8 @@
 						<div class="card-body">
 							<label>What's your favorite food from the list?</label>
 							<select id="multipleChoice" class="form-control">
-								<option>Disabled select</option>
+								<option id="q7a" value="1">Lasagna</option>
+								<option id="q7b" value="2">Pizza</option>
 							</select>
 						</div>
 					</div>
@@ -122,7 +145,8 @@
 						<div class="card-body">
 							<label>Favorite type of music from the list?</label>
 							<select id="multipleChoice" class="form-control">
-								<option>Disabled select</option>
+								<option id="q8a" value="1">Hip Hop</option>
+								<option id="q8b" value="2">Country</option>
 							</select>
 						</div>
 					</div>
@@ -134,7 +158,8 @@
 						<div class="card-body">
 							<label>Your favorite animal?</label>
 							<select id="multipleChoice" class="form-control">
-								<option>Disabled select</option>
+								<option id="q9a" value="1">Cats</option>
+								<option id="q9b" value="2">Dogs</option>
 							</select>
 						</div>
 					</div>
@@ -146,7 +171,8 @@
 						<div class="card-body">
 							<label>Choose your superpower</label>
 							<select id="multipleChoice" class="form-control">
-								<option>Disabled select</option>
+								<option id="q10a" value="1">Super Strength</option>
+								<option id="q10b" value="2">Lightning Speed</option>
 							</select>
 						</div>
 					</div>
@@ -154,7 +180,7 @@
 			</div>
 		</div>
 
-		<button id="button" class="form-group">Submit Survey</button>
+		<button id="submit" type="button" class="btn btn-primary btn-lg btn-block">Submit Survey</button>
 	</div>
 
 </body>
@@ -163,16 +189,20 @@
 	#multipleChoice {
 		width: 70%;
 	}
-#button {
-	background-color: lightblue;
-	width: 100%;
 
-}
-	.card {
-		margin-bottom: 2%;
+	#button {
+		background-color: red;
+		width: 100%;
 	}
 
+	.card {
+		margin-bottom: 2%;
+		background-color: lightskyblue;
+	}
 
+	h1 {
+		text-align: center;
+	}
 </style>
 
 </html>
