@@ -176,10 +176,12 @@
 							</div>
 						</div>
 					</div>
+
 				</div>
 			</div>
 
 			<button id="submit" type="button" class="btn btn-primary btn-lg btn-block">Submit Survey</button>
+
 	</div>
 	</form>
 
@@ -210,15 +212,37 @@
 	$("#submit").on("click", function (event) {
 		event.preventDefault();
 
-		var optionValue = document.getElementById("type");
 
-		for (var i = 0; i < optionValue.length; i++) {
-			if (optionValue[i].checked);
-			console.log(optionValue.value);
+		var q1a = parseInt(document.getElementById("q1a").value);
+		var q1b = parseInt(document.getElementById("q1b").value);
+		var q2a = parseInt(document.getElementById("q2a").value);
+		var q2b = parseInt(document.getElementById("q2b").value);
+		var q3a = parseInt(document.getElementById("q3a").value);
+		var q3b = parseInt(document.getElementById("q3b").value);
+		var q4a = parseInt(document.getElementById("q4a").value);
+		var q4b = parseInt(document.getElementById("q4b").value);
+		var q5a = parseInt(document.getElementById("q5a").value);
+		var q5b = parseInt(document.getElementById("q5b").value);
+		var q6a = parseInt(document.getElementById("q6a").value);
+		var q6b = parseInt(document.getElementById("q6b").value);
+		var q7a = parseInt(document.getElementById("q7a").value);
+		var q7b = parseInt(document.getElementById("q7b").value);
+		var q8a = parseInt(document.getElementById("q8a").value);
+		var q8b = parseInt(document.getElementById("q8b").value);
+		var q9a = parseInt(document.getElementById("q9a").value);
+		var q9b = parseInt(document.getElementById("q9b").value);
+		var q10a = parseInt(document.getElementById("q10a").value);
+		var q10b = parseInt(document.getElementById("q10b").value);
+
+		console.log(q1a);
+		console.log(q1b);
+
+		var qTotal = [q1a + q1b + q2a + q2b + q3a + q3b + q4a + q4b + q5a + q5b + q6a + q6b + q7a + q7b + q8a + q8b + q9a + q9b + q10a + q10b];
+
+		alert(qTotal);
+		for (var i = 0; i < qTotal.length; i++) {
+
 		}
-
-
-
 	});
 
 
