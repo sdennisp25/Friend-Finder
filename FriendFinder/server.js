@@ -21,3 +21,8 @@ require('./app/routing/htmlRoutes.js')(app);
 app.listen(PORT, function() {
   console.log("App listening on PORT: " + PORT);
 });
+
+
+////////// PSEUDO CODE ////////////
+
+//// I have to somehow setup the modal to display the match of the user from the friend.js file.

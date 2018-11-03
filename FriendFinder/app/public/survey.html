@@ -12,6 +12,25 @@
 </head>
 
 <body>
+	<!-- //////////////////MODAL TEST////////////// -->
+	<div class="modal" id="myModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" type="button" data-dismiss="#modal">X</button>
+
+					<h2 class="modal-title">MODAL TEST</h2>
+					<div class="modal-body">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum mollitia voluptatem cum adipisci sed accusantium, architecto
+							non modi, ipsa, quaerat atque. Dolorem mollitia harum labore odio rem repellat sunt earum.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container">
@@ -21,6 +40,10 @@
 
 	<div class="container">
 
+		<!-- Attempted to test the modal -->
+		<a href="#" data-toggle="modal" data-target="#myModal">MODAL TEST...</a>
+
+		<br>
 
 		<form id="quizForm" onsubmit="return submitAnswers()">
 
@@ -66,7 +89,7 @@
 							<input type="radio" name="q5" value="1" id="q5a"> Las Vegas <br>
 							<input type="radio" name="q5" value="2" id="q5b"> Hawaii <br>
 						</div>
-						<!-- /////////////////////////////////////////////////// -->
+						<!-- /////////////////SURVEY SPLIT /////////////////// -->
 						<div class="col-md-6">
 							<h4>What is your favorite superpower?</h4>
 							<input type="radio" name="q6" value="1" id="q6a"> Super Strength<br>
@@ -89,22 +112,15 @@
 			</div>
 
 			<input id="submit" type="submit" class="btn btn-primary btn-lg btn-block" value="Submit Answers">
+
 		</form>
 		<br><br>
 
-		<div id="dialog" title="Basic dialog">
-			<p>Image:</p>
-			<img src="http://placehold.it/50x50" alt="Placeholder Image" />
-
-		</div>
 
 </body>
 
 <script>
-	$(function () {
-		$("#dialog").dialog();
-	});
-
+	// This function will gather data from the survey for future matching in the friends.js
 	function submitAnswers() {
 		event.preventDefault();
 		var q1 = parseInt(document.forms["quizForm"]["q1"].value);
@@ -131,7 +147,6 @@
 			link + "\n" +
 			"Your Total: " + userScore);
 	}
-
 </script>
 
 <style>
